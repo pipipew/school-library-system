@@ -1,0 +1,47 @@
+{
+  "name": "school-library-system-backend",
+  "version": "1.0.0",
+  "description": "Backend API for School Library Management System",
+  "main": "src/server.js",
+  "type": "commonjs",
+  "scripts": {
+    "start": "node src/server.js",
+    "dev": "nodemon src/server.js",
+    "test": "jest --coverage",
+    "test:watch": "jest --watch",
+    "lint": "eslint src/",
+    "lint:fix": "eslint src/ --fix",
+    "format": "prettier --write src/",
+    "db:migrate": "node src/db/runMigrations.js",
+    "db:seed": "node src/db/seed.js"
+  },
+  "keywords": [
+    "library",
+    "management",
+    "education",
+    "k12"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "dotenv": "^16.0.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "pg": "^8.9.0",
+    "express-validator": "^7.0.0",
+    "body-parser": "^1.20.2",
+    "winston": "^3.8.2"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "jest": "^29.4.0",
+    "supertest": "^6.3.3",
+    "eslint": "^8.34.0",
+    "prettier": "^2.8.3",
+    "@babel/preset-env": "^7.20.2",
+    "babel-jest": "^29.4.0"
+  }
+}
